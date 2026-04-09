@@ -83,8 +83,8 @@ export default function Testimonials() {
         </div>
 
         <div className={styles.grid}>
-          {testimonials.map((t) => (
-            <div key={t.name} className={styles.card}>
+          {testimonials.map((t, index) => (
+            <div key={`testimonial-${index}`} className={styles.card}>
               <Stars count={t.rating} />
               <p className={styles.cardText}>&ldquo;{t.text}&rdquo;</p>
               <div className={styles.cardFooter}>

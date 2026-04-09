@@ -64,7 +64,7 @@ export default function FAQ() {
         <div className={styles.list}>
           {faqs.map((faq, i) => (
             <div
-              key={i}
+              key={faq.question}
               className={`${styles.item} ${open === i ? styles.itemOpen : ""}`}
             >
               <button
