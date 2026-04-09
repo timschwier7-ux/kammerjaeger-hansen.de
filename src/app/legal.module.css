@@ -1,0 +1,48 @@
+.legal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.legal h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--color-gray-900);
+}
+
+.legal h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-gray-800);
+}
+
+.legal p {
+  color: var(--color-gray-600);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.legal a {
+  color: var(--color-primary);
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: opacity var(--transition-fast);
+}
+
+.backLink:hover {
+  opacity: 0.8;
+}
