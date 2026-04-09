@@ -34,6 +34,9 @@ export default function Footer() {
             <a href="#leistungen" className={styles.footerLink}>
               24h Notdienst
             </a>
+            <a href="#faq" className={styles.footerLink}>
+              Häufige Fragen
+            </a>
           </div>
         </div>
 

@@ -118,3 +118,16 @@ button {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ===== Selection color ===== */
+::selection {
+  background: rgba(0, 102, 204, 0.15);
+  color: var(--color-gray-900);
+}
+
+/* ===== Focus visible for accessibility ===== */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
