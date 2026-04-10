@@ -328,20 +328,22 @@
   flex-shrink: 0;
 }
 
-.reviewDate {
-  font-size: 0.7rem;
-  color: #666;
-}
-
 .reviewStars {
   display: flex;
+  align-items: center;
   gap: 1px;
   margin-bottom: 0.35rem;
 }
 
 .reviewStar {
-  color: #FBBF24;
-  font-size: 0.9rem;
+  color: #e8710a;
+  font-size: 0.85rem;
+}
+
+.reviewDate {
+  font-size: 0.7rem;
+  color: #666;
+  margin-left: 0.4rem;
 }
 
 .reviewText {

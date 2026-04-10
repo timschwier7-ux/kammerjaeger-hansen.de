@@ -281,13 +281,13 @@ export default function Hero() {
                         <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </div>
-                    <div className={styles.reviewDate}>{reviews[currentIndex].date}</div>
                   </div>
                 </div>
                 <div className={styles.reviewStars}>
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className={styles.reviewStar}>★</span>
                   ))}
+                  <span className={styles.reviewDate}>{reviews[currentIndex].date}</span>
                 </div>
                 <p className={styles.reviewText}>{reviews[currentIndex].text}</p>
               </div>
