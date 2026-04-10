@@ -195,35 +195,45 @@
   flex-shrink: 0;
 }
 
-/* Google Rating Box */
+/* Google Rating Box Container */
+.googleBoxContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 .googleBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+}
+
+.googleHeader {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: #fff;
-  border-radius: 12px;
-  padding: 0.85rem 1.5rem;
-  margin-top: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .googleLogo {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
 }
 
 .googleRating {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 .googleScore {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #111;
   line-height: 1;
@@ -243,11 +253,135 @@
   font-size: 0.8rem;
   color: #1a73e8;
   font-weight: 500;
-  text-decoration: none;
 }
 
-.googleReviews:hover {
-  text-decoration: underline;
+/* Review Slider */
+.reviewSlider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sliderArrow {
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.sliderArrow:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.reviewCard {
+  flex: 1;
+  min-width: 0;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.reviewAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.reviewMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.reviewName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.verifiedIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.reviewDate {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+.reviewStars {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 0.35rem;
+}
+
+.reviewStar {
+  color: #FBBF24;
+  font-size: 0.9rem;
+}
+
+.reviewText {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Slider Dots */
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.dot:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dotActive {
+  background: #1a73e8;
+  transform: scale(1.2);
 }
 
 @media (max-width: 600px) {
@@ -271,8 +405,55 @@
     white-space: normal;
   }
 
+  .googleBoxContainer {
+    padding: 0 0.5rem;
+  }
+
   .googleBox {
-    width: calc(100% - 2rem);
-    justify-content: center;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .googleHeader {
+    gap: 0.75rem;
+  }
+
+  .googleLogo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .googleScore {
+    font-size: 1.4rem;
+  }
+
+  .sliderArrow {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+
+  .reviewAvatar {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .reviewName {
+    font-size: 0.8rem;
+  }
+
+  .reviewText {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .sliderDots {
+    gap: 3px;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
   }
 }
