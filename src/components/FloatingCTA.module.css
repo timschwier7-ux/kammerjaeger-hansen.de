@@ -104,6 +104,13 @@
   box-shadow: 0 6px 24px rgba(232, 113, 26, 0.5);
 }
 
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .bar {
+    display: none;
+  }
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   .bar {
