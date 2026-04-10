@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./Header.module.css";
 
 const navItems = [
@@ -28,8 +29,14 @@ export default function Header() {
     >
       <div className={styles.headerInner}>
         <a href="#hero" className={styles.logo}>
-          <span className={styles.logoIcon}>🔧</span>
-          Rohrreinigung Schorn
+          <Image
+            src="/logo.png"
+            alt="Rohrexperte Logo"
+            width={40}
+            height={40}
+            className={styles.logoIcon}
+          />
+          Rohrexperte
         </a>
 
         <button

@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "Welche Bereiche decken Sie ab?",
     answer:
-      "Wir sind in der Region Schorn und Umgebung tätig, einschließlich München, Starnberg, Fürstenfeldbruck, Germering, Gauting, Gilching und vielen weiteren Orten in Oberbayern.",
+      "Wir sind in Ihrer Region und Umgebung tätig und helfen Ihnen schnell und zuverlässig.",
   },
   {
     question: "Welche Methoden verwenden Sie?",

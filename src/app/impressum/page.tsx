@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../legal.module.css";
 
 export const metadata: Metadata = {
-  title: "Impressum – Rohrreinigung Schorn",
+  title: "Impressum – Rohrexperte",
 };
 
 export default function Impressum() {
@@ -17,7 +17,7 @@ export default function Impressum() {
 
       <h2>Angaben gemäß § 5 TMG</h2>
       <p>
-        Rohrreinigung Schorn
+        Rohrexperte
         <br />
         [Vorname Nachname]
         <br />
@@ -30,7 +30,7 @@ export default function Impressum() {
       <p>
         Telefon: +49 170 1234 5678
         <br />
-        E-Mail: info@rohrreinigung-schorn.de
+        E-Mail: info@rohrexperte.de
       </p>
 
       <h2>Umsatzsteuer-ID</h2>

@@ -33,7 +33,7 @@ const testimonials = [
     name: "Andreas B.",
     location: "Gauting",
     rating: 5,
-    text: "Hatte schon andere Firmen hier – keine kam an Rohrreinigung Schorn ran. Modernste Technik, ehrliche Beratung und der beste Preis in der Region.",
+    text: "Hatte schon andere Firmen hier – keine kam an Rohrexperte ran. Modernste Technik, ehrliche Beratung und der beste Preis in der Region.",
     date: "vor 2 Monaten",
   },
   {

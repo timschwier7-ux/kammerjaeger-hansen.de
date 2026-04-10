@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -8,11 +9,18 @@ export default function Footer() {
       <div className={styles.footerInner}>
         <div>
           <div className={styles.footerLogo}>
-            🔧 Rohrreinigung Schorn
+            <Image
+              src="/logo.png"
+              alt="Rohrexperte Logo"
+              width={40}
+              height={40}
+              className={styles.footerLogoImg}
+            />
+            Rohrexperte
           </div>
           <p className={styles.footerDesc}>
             Ihr zuverlässiger Partner für professionelle Rohrreinigung,
-            Kanalreinigung und 24h-Notdienst in Schorn und Umgebung.
+            Kanalreinigung und 24h-Notdienst in Ihrer Region.
           </p>
         </div>
 
@@ -47,19 +55,19 @@ export default function Footer() {
               📞 +49 170 1234 5678
             </a>
             <a
-              href="mailto:info@rohrreinigung-schorn.de"
+              href="mailto:info@rohrexperte.de"
               className={styles.footerLink}
             >
-              ✉️ info@rohrreinigung-schorn.de
+              ✉️ info@rohrexperte.de
             </a>
-            <span className={styles.footerLink}>📍 Region Schorn</span>
+            <span className={styles.footerLink}>📍 Ihre Region</span>
           </div>
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <span>
-          &copy; {currentYear} Rohrreinigung Schorn. Alle Rechte vorbehalten.
+          &copy; {currentYear} Rohrexperte. Alle Rechte vorbehalten.
         </span>
         <div className={styles.footerBottomLinks}>
           <a href="/impressum" className={styles.footerBottomLink}>
