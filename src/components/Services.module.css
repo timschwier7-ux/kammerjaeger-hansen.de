@@ -278,3 +278,9 @@
   color: var(--color-gray-600);
   font-weight: 500;
 }
+
+.ctaRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}

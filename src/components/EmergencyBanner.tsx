@@ -1,4 +1,5 @@
 import styles from "./EmergencyBanner.module.css";
+import CallButton from "./CallButton";
 
 export default function EmergencyBanner() {
   return (
@@ -15,9 +16,7 @@ export default function EmergencyBanner() {
             Minuten bei Ihnen.
           </p>
           <div className={styles.ctas}>
-            <a href="tel:+4917012345678" className={styles.callBtn}>
-              📞 Jetzt Notdienst anrufen
-            </a>
+            <CallButton />
             <div className={styles.freeNote}>
               ✅ Kostenlose Erstberatung am Telefon
             </div>

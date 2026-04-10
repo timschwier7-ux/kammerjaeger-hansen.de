@@ -120,3 +120,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.ctaRow {
+  margin-top: 2rem;
+}

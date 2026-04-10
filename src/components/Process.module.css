@@ -130,3 +130,9 @@
     padding: 1.25rem;
   }
 }
+
+.ctaRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}

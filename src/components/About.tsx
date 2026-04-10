@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
+import CallButton from "./CallButton";
 
 const features = [
   {
@@ -57,6 +58,9 @@ export default function About() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className={styles.ctaRow}>
+            <CallButton />
           </div>
         </div>
 
