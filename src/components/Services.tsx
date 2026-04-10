@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: "Mathias",
     role: "Meister & Geschäftsführer",
-    initials: "M",
+    initials: "MA",
   },
   {
     name: "Peter",
@@ -47,7 +47,7 @@ const teamMembers = [
   {
     name: "Michael",
     role: "Techniker & Berater",
-    initials: "M",
+    initials: "MI",
   },
 ];
 
