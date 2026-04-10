@@ -1,0 +1,40 @@
+.callButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: #e8711a;
+  color: #ffffff;
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(232, 113, 26, 0.45);
+  transition: background 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.callButton:hover {
+  background: #c45e12;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(232, 113, 26, 0.55);
+}
+
+.callButton:active {
+  transform: translateY(0);
+}
+
+.phoneIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .callButton {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+  }
+}

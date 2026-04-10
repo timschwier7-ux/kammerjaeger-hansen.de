@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
+import CallButton from "./CallButton";
 
 const reviews = [
   {
@@ -169,12 +170,10 @@ export default function Hero() {
         </p>
 
         <div className={styles.heroCta}>
-          <span className={styles.btnPrimary}>
-            📞 Sofort anrufen
-          </span>
-          <span className={styles.btnSecondary}>
+          <CallButton />
+          <a href="#kontakt" className={styles.btnSecondary}>
             ✉️ Kontakt aufnehmen
-          </span>
+          </a>
         </div>
 
         <div className={styles.trustBar}>

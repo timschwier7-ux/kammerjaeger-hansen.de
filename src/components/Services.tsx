@@ -1,4 +1,5 @@
 import styles from "./Services.module.css";
+import CallButton from "./CallButton";
 
 const services = [
   {
@@ -106,6 +107,9 @@ export default function Services() {
               </div>
             ))}
           </div>
+        </div>
+        <div className={styles.ctaRow}>
+          <CallButton />
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./FAQ.module.css";
+import CallButton from "./CallButton";
 
 const faqs = [
   {
@@ -87,6 +88,9 @@ export default function FAQ() {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.ctaRow}>
+          <CallButton />
         </div>
       </div>
     </section>

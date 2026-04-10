@@ -1,4 +1,5 @@
 import styles from "./Process.module.css";
+import CallButton from "./CallButton";
 
 const steps = [
   {
@@ -55,6 +56,9 @@ export default function Process() {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.ctaRow}>
+          <CallButton />
         </div>
       </div>
     </section>
