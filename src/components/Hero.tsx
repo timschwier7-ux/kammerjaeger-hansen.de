@@ -129,12 +129,15 @@ const reviews = [
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [isPaused, setIsPaused] = useState(false);
+
   useEffect(() => {
+    if (isPaused) return;
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % reviews.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isPaused]);
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
@@ -248,7 +251,11 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className={styles.reviewSlider}>
+            <div
+              className={styles.reviewSlider}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
               <button
                 className={styles.sliderArrow}
                 onClick={prevSlide}
@@ -268,7 +275,8 @@ export default function Hero() {
                   <div className={styles.reviewMeta}>
                     <div className={styles.reviewName}>
                       {reviews[currentIndex].name}
-                      <svg className={styles.verifiedIcon} viewBox="0 0 24 24" fill="none">
+                      <svg className={styles.verifiedIcon} viewBox="0 0 24 24" fill="none" role="img" aria-label="Verifizierter Nutzer">
+                        <title>Verifizierter Nutzer</title>
                         <circle cx="12" cy="12" r="10" fill="#1DA1F2" />
                         <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
