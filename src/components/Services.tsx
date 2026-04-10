@@ -33,6 +33,24 @@ const services = [
   },
 ];
 
+const teamMembers = [
+  {
+    name: "Mathias",
+    role: "Meister & Geschäftsführer",
+    initials: "MA",
+  },
+  {
+    name: "Peter",
+    role: "Techniker & Spezialist",
+    initials: "P",
+  },
+  {
+    name: "Michael",
+    role: "Techniker & Berater",
+    initials: "MI",
+  },
+];
+
 export default function Services() {
   return (
     <section id="leistungen" className={styles.services}>
@@ -54,6 +72,40 @@ export default function Services() {
               <p className={styles.cardText}>{service.text}</p>
             </div>
           ))}
+        </div>
+
+        {/* Team Section with smooth transition */}
+        <div className={styles.teamDivider}>
+          <div className={styles.dividerLine}></div>
+          <span className={styles.dividerIcon}>👥</span>
+          <div className={styles.dividerLine}></div>
+        </div>
+
+        <div className={styles.teamSection}>
+          <span className={styles.teamLabel}>Unser starkes Team</span>
+          <h2 className={styles.teamTitle}>Die Profis hinter dem Erfolg</h2>
+          <p className={styles.teamSubtitle}>
+            Erfahrene Fachkräfte, die mit Leidenschaft und Know-how für Sie im Einsatz sind.
+          </p>
+
+          <div className={styles.teamGrid}>
+            {teamMembers.map((member, index) => (
+              <div 
+                key={member.name} 
+                className={styles.teamCard}
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <div className={styles.teamImageWrapper}>
+                  <div className={styles.teamImageGlow}></div>
+                  <div className={styles.teamAvatar}>
+                    {member.initials}
+                  </div>
+                </div>
+                <h3 className={styles.teamName}>{member.name}</h3>
+                <p className={styles.teamRole}>{member.role}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
