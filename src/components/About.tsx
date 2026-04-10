@@ -42,7 +42,7 @@ export default function About() {
             Ihr zuverlässiger Partner für Rohrreinigung
           </h2>
           <p className={styles.aboutText}>
-            Rohrreinigung Schorn steht seit über 10 Jahren für professionelle
+            Rohrexperte steht seit über 10 Jahren für professionelle
             und zuverlässige Rohrreinigung. Unser erfahrenes Team setzt auf
             modernste Technik und faire Preise. Ob Notdienst am Wochenende oder
             geplante Kanalreinigung – wir sind immer für Sie da.

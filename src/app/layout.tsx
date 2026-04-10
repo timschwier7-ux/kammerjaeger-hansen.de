@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rohrreinigung Schorn – Professionelle Rohrreinigung & 24h Notdienst",
+  title: "Rohrexperte – Professionelle Rohrreinigung & 24h Notdienst",
   description:
-    "Rohrreinigung Schorn: Ihr zuverlässiger Partner für professionelle Rohrreinigung, Kanalreinigung & 24h Notdienst. Schnell, fair & kompetent. ✓ Festpreisgarantie ✓ 30-60 Min. vor Ort ✓ Keine versteckten Kosten. Jetzt anrufen!",
+    "Rohrexperte: Ihr zuverlässiger Partner für professionelle Rohrreinigung, Kanalreinigung & 24h Notdienst. Schnell, fair & kompetent. ✓ Festpreisgarantie ✓ 30-60 Min. vor Ort ✓ Keine versteckten Kosten. Jetzt anrufen!",
   keywords:
-    "Rohrreinigung, Kanalreinigung, Notdienst, Abflussreinigung, Hochdruckspülung, Kamerainspektion, Schorn, Rohrverstopfung, Abfluss verstopft, Rohr verstopft, Klempner Notdienst, Sanitär Notdienst",
-  authors: [{ name: "Rohrreinigung Schorn" }],
+    "Rohrreinigung, Kanalreinigung, Notdienst, Abflussreinigung, Hochdruckspülung, Kamerainspektion, Rohrverstopfung, Abfluss verstopft, Rohr verstopft, Klempner Notdienst, Sanitär Notdienst",
+  authors: [{ name: "Rohrexperte" }],
   robots: {
     index: true,
     follow: true,
@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rohrreinigung Schorn – 24h Notdienst & Rohrreinigung",
+    title: "Rohrexperte – 24h Notdienst & Rohrreinigung",
     description:
-      "Schnell, zuverlässig und fair – Rohrreinigung Schorn löst Ihre Verstopfungen mit modernster Technik. 24/7 Notdienst verfügbar.",
+      "Schnell, zuverlässig und fair – Rohrexperte löst Ihre Verstopfungen mit modernster Technik. 24/7 Notdienst verfügbar.",
     type: "website",
     locale: "de_DE",
-    siteName: "Rohrreinigung Schorn",
-    url: "https://rohrreinigung-schorn.de",
+    siteName: "Rohrexperte",
+    url: "https://rohrexperte.de",
   },
   alternates: {
-    canonical: "https://rohrreinigung-schorn.de",
+    canonical: "https://rohrexperte.de",
   },
 };
 

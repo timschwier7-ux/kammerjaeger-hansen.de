@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../legal.module.css";
 
 export const metadata: Metadata = {
-  title: "Datenschutzerklärung – Rohrreinigung Schorn",
+  title: "Datenschutzerklärung – Rohrexperte",
 };
 
 export default function Datenschutz() {

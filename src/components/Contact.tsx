@@ -12,13 +12,13 @@ const contactInfo = [
   {
     icon: "✉️",
     label: "E-Mail",
-    value: "info@rohrreinigung-schorn.de",
-    href: "mailto:info@rohrreinigung-schorn.de",
+    value: "info@rohrexperte.de",
+    href: "mailto:info@rohrexperte.de",
   },
   {
     icon: "📍",
     label: "Standort",
-    value: "Region Schorn & Umgebung",
+    value: "Ihre Region",
   },
   {
     icon: "🕐",

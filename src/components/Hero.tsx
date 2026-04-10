@@ -164,7 +164,7 @@ export default function Hero() {
         </h1>
 
         <p className={styles.heroSubtitle}>
-          Schnell, zuverlässig und fair – Rohrreinigung Schorn löst Ihre
+          Schnell, zuverlässig und fair – Rohrexperte löst Ihre
           Verstopfungen mit modernster Technik. Wir sind in 30–60 Minuten bei
           Ihnen.
         </p>

@@ -15,12 +15,12 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Rohrreinigung Schorn",
+    name: "Rohrexperte",
     description:
-      "Professionelle Rohrreinigung, Kanalreinigung und 24h Notdienst in Schorn und Umgebung.",
-    url: "https://rohrreinigung-schorn.de",
+      "Professionelle Rohrreinigung, Kanalreinigung und 24h Notdienst in Ihrer Region.",
+    url: "https://rohrexperte.de",
     telephone: "+4917012345678",
-    email: "info@rohrreinigung-schorn.de",
+    email: "info@rohrexperte.de",
     priceRange: "€€",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -53,7 +53,7 @@ export default function Home() {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Rohrreinigung Dienstleistungen",
+      name: "Rohrexperte Dienstleistungen",
       itemListElement: [
         {
           "@type": "Offer",

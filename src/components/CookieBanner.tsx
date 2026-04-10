@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import styles from "./CookieBanner.module.css";
 
-const COOKIE_KEY = "rohrreinigung-schorn-cookies-accepted";
+const COOKIE_KEY = "rohrexperte-cookies-accepted";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
